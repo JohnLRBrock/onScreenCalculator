@@ -1,7 +1,6 @@
 // Input: Array of integers
 // Output: A single integer
-
-function maxInt(intArr) {
+function max_int(intArr) {
   if (intArr.length === 0){
     return null;
   }
@@ -14,3 +13,16 @@ function maxInt(intArr) {
   return max;
 }
 
+// Input: string
+// Output: number of vowels in the string
+function vowel_count(str) {
+  var vowels = 'AEIOUaeiou';
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i]))
+    {
+      count += 1;
+    }
+  }
+  return count;
+}
